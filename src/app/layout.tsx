@@ -1,4 +1,8 @@
-import './globals.css'
+import { Inter } from 'next/font/google'
+import '@/styles/globals.css'
+import Provider from '@/components/Provider'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className + ' antialiased'}>
+        <Provider>
+          {children}
+        </Provider>
+      </body>
     </html>
   )
-}
+} 

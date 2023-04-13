@@ -13,12 +13,9 @@ const BoardItem = ({ data, onUpdate, onOpenSetting, active } : { data: BoardType
     const [name, setName] = useState('');
     const [defaultName, setDefaultName] = useState('');
 
-    console.log(active, data.id)
-
     useEffect(() => {
         setName(data.name);
         setDefaultName(data.name);
-        console.log('firing')
     }, [data]);
 
     const handleEdit = () => {

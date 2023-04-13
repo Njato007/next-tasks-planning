@@ -17,11 +17,11 @@ export default function RootLayout({
         <Header />
         <div className='flex px-0 py-0 m-0 w-full gap-0 min-h-[calc(100vh-5rem)] overflow-y-scroll'>
           {/* Left bar */}
-          <div className="flex flex-col backdrop-blur-xl bg-slate-50/20 dark:bg-slate-950/50 min-w-[260px] md:w-[320px] max-w-[260px] md:max-w-[320px]">
+          <div className="z-50 flex flex-col backdrop-blur-xl bg-slate-50/20 dark:bg-slate-950/50 min-w-[260px] md:w-[320px] max-w-[260px] md:max-w-[320px]">
             <LeftBar />
           </div>
           {/* Right panel */}
-          <div className="flex-grow">
+          <div className="w-full z-0">
             {children}
           </div>
 

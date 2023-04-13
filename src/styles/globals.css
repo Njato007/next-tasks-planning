@@ -51,7 +51,7 @@
     }
 
     .setting {
-        transform: translateX(320px);
+        /* transform: translateX(300px); */
         /* width: 50px !important; */
         transition: width 0.6s ease;
         overflow: hidden;
